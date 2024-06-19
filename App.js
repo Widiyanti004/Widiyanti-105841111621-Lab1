@@ -1,84 +1,35 @@
-import { StyleSheet, Text, View, Image , ScrollView } from 'react-native'
+import { Text, View, Image , TextInput } from 'react-native'
 import React from 'react'
-import ButtonComponent from './component/button/button'
 
-const App = () =>  {
+const App = () => {
+  const Inputan = ({ nama, color })=>{
+    return(
+      <TextInput
+      placeholder={`Masukan ${nama}`}
+      style ={{
+        borderWidth: 1,
+        borderColor: 'black',
+        borderRadius: 10,
+        width: 300,
+        height: 50,
+        marginVertical: 10,
+        padding: 10,
+        backgroundColor: 'pink',
+        color: color,
+      }}
+      />
+    )
+  }
   return (
-    <View style={{
+    <View style = {{
       flex: 1,
-      backgroundColor: '#000'
+      justifyContent: 'center',
+      alignItems: 'center',
     }}>
-      <Image source={require('./assets/kopi.jpg')}
-      style={{
-        width: '100%',
-        height: '100%',
-        position: 'absolute',
-        opacity: 0.5,
-        zIndex: -1,
-      }}
-      resizeMode="cover"
-      />
-      <ScrollView contentContainerStyle={{
-        flexGrow: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-        padding: 20,
-      }}>
-        <Image source={require('./assets/logo-kopi.png')}
-        style={{
-          width: 200,
-          height: 200,
-          marginTop: 50,
-          opacity: 1,
-          zIndex: 1,
-      }}
-      />
-      <Text style={{
-        color: 'white',
-        fontSize: 28,
-        fontWeight: '300',
-        textAlign: 'center',
-        marginTop: 20,
-      }}>
-        Selamat Datang di Dunia Kopi
-      </Text>
-      <Text style={{
-        color: 'white',
-        fontSize: 18,
-        textAlign: 'center',
-        marginTop: 20,
-      }}>
-        Rasakan kehangatan secangkir kopi yang menyala di pagi hari, mengusir dingin dan membawa semangat baru untuk memulai petualanganmu.  
-      </Text>
-      <Text style={{
-        color: 'white',
-        fontSize: 18,
-        textAlign: 'center',
-        marginTop: 20,
-      }}>
-        Temukan aroma yang menggoda dari biji kopi yang dipanggang dengan cinta, mengisi ruangan dengan kesegaran yang menggugah selera.
-      </Text>
-      <Text style={{
-        color: 'white',
-        fontSize: 18,
-        textAlign: 'center',
-        marginTop: 20,
-        marginBottom: 20,
-      }}>
-        jelajahi dunia rasa yang tak terbatas, dari pahit hingga manis, dari yang lembut hingga kuat, di setiap tetes kopi yang kamu nikmati.
-      </Text>
-      <View style={{
-        flexDirection: 'row',
-        justifyContent: 'center',
-        alignItems: 'center',
-        marginBottom: 50,
-      }}>
-        <ButtonComponent title= "Sign In" color="blue" />
-        <ButtonComponent title= "Sign Up" color="tomato" />
-      </View>
-    </ScrollView>
-  </View>
+      <Inputan nama = "Email" color = "white"/>
+      <Inputan nama = "Username" color = "white"/>
+      <Inputan nama = "Password" color = "black"/>
+    </View>
   )
 }
-
 export default App;
