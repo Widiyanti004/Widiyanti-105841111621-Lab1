@@ -1,23 +1,30 @@
 import { Text, View } from 'react-native'
 import React from 'react'
 
-const ButtonComponent = ({ title, color}) =>  {
+const ButtonComponent = ({ title, color }) =>  {
   return (
-    <View style={{ marginHorizontal: 10 }}>
+    <View style={{
+        marginHorizontal: 10,
+        alignItems: 'center',
+        justifyContent: 'start'
+        }}>
+
         <Text style= {{
-            width: 100,
+            width: 350,
             height: 50,
             color: 'white',
             backgroundColor: color,
             textAlign: 'center',
-            lineHeight: 50,
+            lineHeight: 60,
             fontSize: 20,
-            borderRadius: 10,
-            }}>{title}</Text> 
+            borderRadius: 50,
+            }}>
+                {title}
+            </Text> 
         </View> 
     )
 }
 
-export default ButtonComponent;
+export default ButtonComponent
 
      
