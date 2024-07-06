@@ -6,7 +6,8 @@ const ButtonComponent = ({ title, color }) =>  {
     <View style={{
         marginHorizontal: 10,
         alignItems: 'center',
-        justifyContent: 'start'
+        justifyContent: 'center',
+        marginVertical: 10
         }}>
 
         <Text style= {{

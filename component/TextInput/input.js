@@ -10,16 +10,15 @@ const Inputan = ({name,color}) =>{
                 borderColor: 'transparent',
                 borderRadius: 5,
                 width: 350,
-                height: 70,
-                marginVertical: 10,
-                padding: 10,
-                paddingTop: 25,
+                height: 64,
+                marginVertical: 8,
+                paddingHorizontal: 10,
                 backgroundColor: 'white',
                 color: color,
                 fontSize: 16,
-                textAlignVertical: 'top',
                 textAlign: 'left'
             }}
+            secureTextEntry = {name === 'Password'}
         />
     )
 }
