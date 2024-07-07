@@ -20,7 +20,7 @@ const ButtonComponent = ({ title, color }) =>  {
             fontSize: 20,
             borderRadius: 50,
             }}>
-                {title}
+            {title}
             </Text> 
         </View> 
     )

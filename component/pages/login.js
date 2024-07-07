@@ -95,7 +95,7 @@ const Login = () => {
             />
         </TouchableOpacity>
         </View>
-        </View>
+    </View>
     )
 }
 

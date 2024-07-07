@@ -18,7 +18,7 @@ const Inputan = ({name,color}) =>{
                 fontSize: 16,
                 textAlign: 'left'
             }}
-            secureTextEntry = {name === 'Password'}
+        secureTextEntry = {name === 'Password'}
         />
     )
 }
