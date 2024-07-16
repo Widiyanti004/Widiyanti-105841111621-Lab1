@@ -12,7 +12,7 @@ const Inputan = ({name,color}) =>{
                 width: 350,
                 height: 64,
                 marginVertical: 8,
-                paddingHorizontal: 10,
+                paddingHorizontal: 10,  
                 backgroundColor: 'white',
                 color: color,
                 fontSize: 16,

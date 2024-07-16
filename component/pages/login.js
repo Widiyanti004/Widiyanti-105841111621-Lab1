@@ -3,7 +3,7 @@ import React from 'react'
 import ButtonComponent from '../button/button'
 import Inputan from '../TextInput/input'
 
-const Login = () => {
+const Login = ({navigation}) => {
     return (
     <View style = {{ 
         flex: 1,
@@ -11,19 +11,9 @@ const Login = () => {
         paddingHorizontal: 30,
         paddingTop: 100
     }}>
-        <TouchableOpacity style = {{
-            position: 'absolute',
-            top: 60,
-            left: 20
-        }}>
-            <Image
-            source = {require('../../assets/back.png')}
-            style = {{ width: 30, height: 30 }}
-        />
-    </TouchableOpacity>
+       
     <View style = {{
-        marginBottom: 60,
-        marginTop: 40
+        marginBottom: 60
     }}>
     <Text style = {{
             fontWeidght: 'bold',
@@ -39,7 +29,7 @@ const Login = () => {
       <Inputan name="Email" color = "black" />
       <Inputan name="Password" color = "black" />
 
-    <TouchableOpacity>
+    <TouchableOpacity onPress = {() => navigation.navigate('ForgotPassword')}>
         <Text style = {{
         fontSize: 14,
         color: 'black',

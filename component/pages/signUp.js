@@ -2,8 +2,9 @@ import { Text, View, Image } from 'react-native'
 import React from 'react'
 import ButtonComponent from '../button/button'
 import Inputan from '../TextInput/input'
+import { TouchableOpacity } from 'react-native-web'
 
-const SignUp = () => {
+const SignUp = ({navigation}) => {
     return (
     <View style = {{ 
         flex: 1,
@@ -16,9 +17,9 @@ const SignUp = () => {
         marginLeft: 25,
         marginTop: 80  
     }}>
-    <Text style = {{
+    <Text style = {{ 
             fontWeidght: 'bold',
-            fontSize: 40
+            fontSize: 40 
      }}>
         Sign Up
     </Text>
@@ -26,7 +27,7 @@ const SignUp = () => {
 
     <View style = {{
         flex: 2,
-        justifyContent: 'center',
+        justifyContent: 'center', 
         alignItems: 'center',
         marginBottom: 100 
     }}>
@@ -40,7 +41,8 @@ const SignUp = () => {
         marginBottom: 30,
         textAlign: 'right',
         marginLeft: 175
-      }}>
+      }}
+      onPress = {() => navigation.navigate('Login')}>
         Already have an Account?
         </Text>
         <ButtonComponent title = "Sign Up" color = "red" />
@@ -54,8 +56,8 @@ const SignUp = () => {
             <Text style = {{
                 fontSize: 14,
                 color: 'black',
-                textAlign: 'center',
-                marginBottom: 10,
+                textAlign: 'center', 
+                marginBottom: 10,  
             }}>
                 Or sign up with social account
             </Text>
@@ -75,7 +77,7 @@ const SignUp = () => {
                      marginRight: 15
                 }}>
 
-                <Image
+                <Image 
                     source = {require('../../assets/google.png')}
                     style = {{width: 50, height: 50}}
                     />
@@ -86,7 +88,7 @@ const SignUp = () => {
                      justifyContent: 'center',
                      alignItems: 'center',
                      borderRadius: 5,
-                     width: 90,
+                     width: 90,  
                      height: 80
                 }}>
 
