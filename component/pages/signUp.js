@@ -2,7 +2,6 @@ import { Text, View, Image } from 'react-native'
 import React from 'react'
 import ButtonComponent from '../button/button'
 import Inputan from '../TextInput/input'
-import { TouchableOpacity } from 'react-native-web'
 
 const SignUp = ({navigation}) => {
     return (
@@ -42,7 +41,7 @@ const SignUp = ({navigation}) => {
         textAlign: 'right',
         marginLeft: 175
       }}
-      onPress = {() => navigation.navigate('Login')}>
+      onPress = {() => navigation.navigate('login')}>
         Already have an Account?
         </Text>
         <ButtonComponent title = "Sign Up" color = "red" />

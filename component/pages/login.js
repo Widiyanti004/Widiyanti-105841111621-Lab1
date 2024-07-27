@@ -41,7 +41,7 @@ const Login = ({navigation}) => {
         </Text>
         </TouchableOpacity>
     </View>
-        <ButtonComponent title = "LOGIN" color = "red" />
+        <ButtonComponent title = "LOGIN" color = "red" borderRadius = {30} onPress = {() => navigation.navigate('MainPage')} />
          <Text style = {{
             fontSize: 14,
             color: 'black',
@@ -62,7 +62,7 @@ const Login = ({navigation}) => {
             alignItems: 'center',
             borderRadius: 10,
             width: 92,
-            height: 64,
+            height: 64, 
             marginHorizontal: 10,
         }}>
         <Image
