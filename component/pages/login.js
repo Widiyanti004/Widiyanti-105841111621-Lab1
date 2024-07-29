@@ -41,14 +41,20 @@ const Login = ({navigation}) => {
         </Text>
         </TouchableOpacity>
     </View>
-        <ButtonComponent title = "LOGIN" color = "red" borderRadius = {30} onPress = {() => navigation.navigate('MainPage')} />
+        <ButtonComponent title = "LOGIN" color = "red" borderRadius = {30} onPress = {() => navigation.navigate('mainPage')} />
          <Text style = {{
             fontSize: 14,
             color: 'black',
             textAlign: 'center',
             marginTop: 90,
             marginBottom: 20
-         }}>
+         }}> 
+            <Text style = {{
+                fontSize: 14,
+                marginBottom: 30, 
+                textAlign: 'center',
+            }}
+        />
             Or login with social account
          </Text>
 
