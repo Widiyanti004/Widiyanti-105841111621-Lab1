@@ -41,7 +41,7 @@ const Login = ({navigation}) => {
         </Text>
         </TouchableOpacity>
     </View>
-        <ButtonComponent title = "LOGIN" color = "red" borderRadius = {30} onPress = {() => navigation.navigate('mainPage')} />
+        <ButtonComponent title = "LOGIN" color = "red" borderRadius = {30} onPress = {() => navigation.navigate('homeScreen')} />
          <Text style = {{
             fontSize: 14,
             color: 'black',
